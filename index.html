@@ -1,14 +1,145 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Veterinaria</title>
+    <title>Veterinaria - Inicio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <!-- Encabezado y Navegación Principal -->
+    <header>
+        <h1>Clínica Veterinaria</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main>
+        <!-- Sección de Bienvenida / Hero -->
+        <section id="hero">
+            <h2>Cuidado y Bienestar para tu Mascota</h2>
+            <p>Brindamos la mejor atención médica y servicios integrales para perros, gatos y otras mascotas.</p>
+            <a href="#citas">Solicitar Cita</a>
+        </section>
+
+        <!-- Sección Sobre Nosotros -->
+        <section id="nosotros">
+            <h2>Sobre la Veterinaria</h2>
+            <p>Somos un equipo de profesionales comprometidos con la salud y el bienestar animal. Con años de experiencia y pasión por lo que hacemos.</p>
+            <ul>
+                <li>Atención personalizada y compasiva</li>
+                <li>Instalaciones equipadas y seguras</li>
+                <li>Especialistas capacitados y certificados</li>
+            </ul>
+        </section>
+
+        <!-- Sección de Servicios -->
+        <section id="servicios">
+            <h2>Nuestros Servicios</h2>
+            <div>
+                <article>
+                    <h3>Consulta General</h3>
+                    <p>Revisiones periódicas y diagnóstico preventivo para mantener a tu mascota saludable.</p>
+                </article>
+
+                <article>
+                    <h3>Vacunación y Desparasitación</h3>
+                    <p>Calendario completo de vacunas y tratamientos preventivos contra parásitos.</p>
+                </article>
+
+                <article>
+                    <h3>Cirugía y Urgencias</h3>
+                    <p>Procedimientos quirúrgicos seguros y atención inmediata ante cualquier emergencia.</p>
+                </article>
+
+                <article>
+                    <h3>Peluquería y Estética</h3>
+                    <p>Baños medicados, corte de pelo y cuidados estéticos para consentirlos.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección de Solicitud de Citas -->
+        <section id="citas">
+            <h2>Solicitar Cita Médica</h2>
+            <form id="formCita" action="#" method="POST">
+                <div>
+                    <label for="nombreDueno">Nombre del Dueño:</label>
+                    <input type="text" id="nombreDueno" name="nombreDueno" required>
+                </div>
+
+                <div>
+                    <label for="telefono">Teléfono de Contacto:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+
+                <div>
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div>
+                    <label for="nombreMascota">Nombre de la Mascota:</label>
+                    <input type="text" id="nombreMascota" name="nombreMascota" required>
+                </div>
+
+                <div>
+                    <label for="tipoMascota">Tipo de Mascota:</label>
+                    <select id="tipoMascota" name="tipoMascota">
+                        <option value="perro">Perro</option>
+                        <option value="gato">Gato</option>
+                        <option value="ave">Ave</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="servicio">Servicio Solicitado:</label>
+                    <select id="servicio" name="servicio">
+                        <option value="consulta">Consulta General</option>
+                        <option value="vacunacion">Vacunación</option>
+                        <option value="desparasitacion">Desparasitación</option>
+                        <option value="cirugia">Cirugía</option>
+                        <option value="peluqueria">Peluquería</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="fecha">Fecha Deseada:</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                </div>
+
+                <div>
+                    <label for="hora">Hora Aproximada:</label>
+                    <input type="time" id="hora" name="hora">
+                </div>
+
+                <div>
+                    <label for="motivo">Motivo o Síntomas:</label>
+                    <textarea id="motivo" name="motivo" rows="4"></textarea>
+                </div>
+
+                <button type="submit">Enviar Solicitud</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2026 Clínica Veterinaria. Todos los derechos reservados.</p>
+        <p>Grupo 3 - Práctica de Trabajo Colaborativo</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
