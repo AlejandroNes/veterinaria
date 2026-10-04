@@ -1,143 +1,266 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Veterinaria - Catálogo de Productos</title>
+    <title>PetVida - Clínica Veterinaria La Paz, Bolivia</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <!-- Barra Superior Informativa -->
+    <div class="topbar">
+        <div class="container topbar-content">
+            <div class="topbar-info">
+                <span>📍 Av. Montenegro #1254, San Miguel, La Paz</span>
+                <span>📞 (02) 279-4512</span>
+                <span>📱 +591 762-34589</span>
+            </div>
 
+            <div class="topbar-info">
+                <span class="topbar-badge">Envíos</span>
+                <span>🚚 Toda La Paz y El Alto</span>
+            </div>
+        </div>
+    </div>
     <!-- Encabezado y Navegación Principal -->
-    <header>
-        <h1>Clínica Veterinaria</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+    <header class="header" id="mainHeader">
+        <div class="container navbar">
+
+            <a href="index.html" class="brand">
+                <div class="brand-icon">🐾</div>
+                <div class="brand-title">Pet<span>Vida</span></div>
+            </a>
+
+            <button class="mobile-toggle" id="mobileToggle">
+                ☰
+            </button>
+
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="productos.html" class="nav-link active">Productos</a></li>
+                    <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="contacto.html" class="btn btn-primary btn-sm">
+                    Realizar Pedido
+                </a>
+            </div>
+
+        </div>
     </header>
 
-    <!-- Contenido Principal -->
-    <main>
-        <section id="productos-intro">
-            <h2>Nuestra Tienda y Farmacia Veterinaria en La Paz</h2>
-            <p>Encuentra productos seleccionados de alta calidad para la nutrición, cuidado y salud de tu mascota. Hacemos envíos a domicilio en toda la ciudad de La Paz y El Alto.</p>
-        </section>
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
 
-        <!-- Filtros por Categoría -->
-        <section id="categorias">
-            <h2>Categorías</h2>
-            <ul>
-                <li><a href="#alimentos">Alimentos y Nutrición</a></li>
-                <li><a href="#medicamentos">Farmacia y Salud</a></li>
-                <li><a href="#accesorios">Accesorios y Juguetes</a></li>
-                <li><a href="#higiene">Higiene y Cuidado</a></li>
-            </ul>
-        </section>
+            <div class="section-header">
+                <span class="section-label">Pet Shop</span>
 
-        <!-- Catálogo de Productos -->
-        <section id="catalogo">
-            <!-- Categoría Alimentos -->
-            <section id="alimentos">
-                <h3>Alimentos y Nutrición</h3>
-                <div>
-                    <article>
-                        <h4>Alimento Prémium para Perro Adulto (15 kg)</h4>
-                        <p>Fórmula completa y balanceada para perros de razas medianas y grandes.</p>
+                <h1 class="section-title">
+                    Productos Veterinarios para el Bienestar de tu Mascota
+                </h1>
+
+                <p class="section-subtitle">
+                    Encuentra alimentos, medicamentos, accesorios y productos
+                    de higiene seleccionados por nuestros especialistas.
+                </p>
+            </div>
+            <div class="hero-cta" style="justify-content:center;">
+                <a href="#alimentos" class="btn btn-outline">Alimentos</a>
+                <a href="#medicamentos" class="btn btn-outline">Farmacia</a>
+                <a href="#accesorios" class="btn btn-outline">Accesorios</a>
+                <a href="#higiene" class="btn btn-outline">Higiene</a>
+            </div>
+        </div>
+    </section>
+    <!-- Productos -->
+    <section class="services-section">
+        <div class="container">
+            <!-- ALIMENTOS -->
+            <div id="alimentos" class="section-header">
+                <span class="section-label">Nutrición</span>
+                <h2 class="section-title">Alimentos y Nutrición</h2>
+            </div>
+            <div class="services-grid">
+                <article class="service-card">
+                    <div class="service-content">
+                        <h3>Alimento Prémium para Perro Adulto</h3>
+                        <p>Fórmula balanceada para perros de razas medianas y grandes.</p>
                         <p><strong>Precio:</strong> Bs. 320.00</p>
-                        <button type="button">Ver Detalle</button>
-                    </article>
-
-                    <article>
-                        <h4>Alimento Especial para Cachorros (3 kg)</h4>
-                        <p>Rico en calcio y DHA para el óptimo desarrollo de huesos y defensas.</p>
+                        <button class="btn btn-primary">
+                            Ver Detalle
+                        </button>
+                    </div>
+                </article>
+                <article class="service-card">
+                    <div class="service-content">
+                        <h3>Alimento Especial para Cachorros</h3>
+                        <p>Rico en calcio y DHA para el desarrollo saludable.</p>
                         <p><strong>Precio:</strong> Bs. 130.00</p>
-                        <button type="button">Ver Detalle</button>
-                    </article>
-
-                    <article>
-                        <h4>Alimento Húmedo para Gato (Lata 85g)</h4>
-                        <p>Paté de salmón de fácil digestión para gatos exigentes.</p>
+                        <button class="btn btn-primary">
+                            Ver Detalle
+                        </button>
+                    </div>
+                </article>
+                <article class="service-card">
+                    <div class="service-content">
+                        <h3>Alimento Húmedo para Gato</h3>
+                        <p>Paté de salmón de alta digestibilidad.</p>
                         <p><strong>Precio:</strong> Bs. 18.00</p>
-                        <button type="button">Ver Detalle</button>
-                    </article>
-                </div>
-            </section>
+                        <button class="btn btn-primary">
+                            Ver Detalle
+                        </button>
+                    </div>
+                </article>
+            </div>
+           <!-- FARMACIA -->
+            <div id="medicamentos" class="section-header" style="margin-top:80px;">
+                <span class="section-label">Salud</span>
+                <h2 class="section-title">Farmacia Veterinaria</h2>
+            </div>
 
-            <!-- Categoría Farmacia -->
-            <section id="medicamentos">
-                <h3>Farmacia y Salud</h3>
-                <div>
-                    <article>
-                        <h4>Pipeta Antipulgas y Garrapatas</h4>
-                        <p>Protección tópica mensual de amplio espectro para perros y gatos.</p>
+            <div class="services-grid">
+
+                <article class="service-card">
+                    <div class="service-content">
+                        <h3>Pipeta Antipulgas y Garrapatas</h3>
+                        <p>Protección mensual para perros y gatos.</p>
                         <p><strong>Precio:</strong> Bs. 85.00</p>
-                        <button type="button">Ver Detalle</button>
-                    </article>
+                        <button class="btn btn-primary">
+                            Ver Detalle
+                        </button>
+                    </div>
+                </article>
 
-                    <article>
-                        <h4>Suplemento Articular Condroprotector (60 tabletas)</h4>
-                        <p>Mejora la movilidad y fortalece las articulaciones en mascotas de edad avanzada.</p>
+                <article class="service-card">
+                    <div class="service-content">
+                        <h3>Suplemento Condroprotector</h3>
+                        <p>Fortalece articulaciones y mejora la movilidad.</p>
                         <p><strong>Precio:</strong> Bs. 195.00</p>
-                        <button type="button">Ver Detalle</button>
-                    </article>
-                </div>
-            </section>
-
-            <!-- Categoría Accesorios -->
-            <section id="accesorios">
-                <h3>Accesorios y Juguetes</h3>
-                <div>
-                    <article>
-                        <h4>Correa y Arnés Ajustable Ergonómico</h4>
-                        <p>Material resistente y reflectivo para paseos cómodos y seguros en la ciudad.</p>
+                        <button class="btn btn-primary">
+                            Ver Detalle
+                        </button>
+                    </div>
+                </article>
+            </div>
+            <!-- ACCESORIOS -->
+            <div id="accesorios" class="section-header" style="margin-top:80px;">
+                <span class="section-label">Diversión</span>
+                <h2 class="section-title">Accesorios y Juguetes</h2>
+            </div>
+            <div class="services-grid">
+                <article class="service-card">
+                    <div class="service-content">
+                        <h3>Correa y Arnés Ajustable</h3>
+                        <p>Material resistente para paseos seguros.</p>
                         <p><strong>Precio:</strong> Bs. 105.00</p>
-                        <button type="button">Ver Detalle</button>
-                    </article>
+                        <button class="btn btn-primary">
+                            Ver Detalle
+                        </button>
+                    </div>
+                </article>
 
-                    <article>
-                        <h4>Juguete Mordedor Dispensador de Premios</h4>
-                        <p>Estimula la inteligencia de tu mascota y ayuda a reducir el estrés.</p>
+                <article class="service-card">
+                    <div class="service-content">
+                        <h3>Juguete Dispensador de Premios</h3>
+                        <p>Estimula la inteligencia y reduce el estrés.</p>
                         <p><strong>Precio:</strong> Bs. 65.00</p>
-                        <button type="button">Ver Detalle</button>
-                    </article>
-                </div>
-            </section>
-
-            <!-- Categoría Higiene -->
-            <section id="higiene">
-                <h3>Higiene y Cuidado</h3>
-                <div>
-                    <article>
-                        <h4>Shampoo Neutro e Hipoalergénico (500 ml)</h4>
-                        <p>Cuidado suave para pieles sensibles con aroma fresco y duradero.</p>
+                        <button class="btn btn-primary">
+                            Ver Detalle
+                        </button>
+                    </div>
+                </article>
+            </div>
+            <!-- HIGIENE -->
+            <div id="higiene" class="section-header" style="margin-top:80px;">
+                <span class="section-label">Cuidado</span>
+                <h2 class="section-title">Higiene y Cuidado</h2>
+            </div>
+           <div class="services-grid">
+                <article class="service-card">
+                    <div class="service-content">
+                        <h3>Shampoo Hipoalergénico</h3>
+                        <p>Cuidado suave para pieles sensibles.</p>
                         <p><strong>Precio:</strong> Bs. 75.00</p>
-                        <button type="button">Ver Detalle</button>
-                    </article>
-
-                    <article>
-                        <h4>Arena Sanitaria Aglomerante para Gato (10 kg)</h4>
-                        <p>Control superior de olores y libre de polvo para un arenero limpio.</p>
+                        <button class="btn btn-primary">
+                            Ver Detalle
+                        </button>
+                    </div>
+                </article>
+                <article class="service-card">
+                    <div class="service-content">
+                        <h3>Arena Sanitaria para Gatos</h3>
+                        <p>Control superior de olores y limpieza.</p>
                         <p><strong>Precio:</strong> Bs. 95.00</p>
-                        <button type="button">Ver Detalle</button>
-                    </article>
-                </div>
-            </section>
-        </section>
-    </main>
+                        <button class="btn btn-primary">
+                            Ver Detalle
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
 
-    <!-- Pie de Página -->
-    <footer>
-        <p>&copy; 2026 Clínica Veterinaria. Todos los derechos reservados.</p>
-        <p>Grupo 3 - Práctica de Trabajo Colaborativo</p>
+            <div class="footer-grid">
+
+                <div class="footer-brand">
+                    <div class="brand">
+                        <div class="brand-icon">🐾</div>
+                        <div class="brand-title">Pet<span>Vida</span></div>
+                    </div>
+
+                    <p>
+                        Clínica veterinaria especializada en el cuidado integral
+                        de mascotas en La Paz.
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Productos</h4>
+                    <ul>
+                        <li>Alimentos</li>
+                        <li>Farmacia</li>
+                        <li>Accesorios</li>
+                        <li>Higiene</li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li>📞 (02) 279-4512</li>
+                        <li>📱 +591 762-34589</li>
+                        <li>✉ contacto@petvida.com.bo</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Clínica Veterinaria PetVida</p>
+                <p>Grupo 3 - Trabajo Colaborativo</p>
+            </div>
+
+        </div>
+
     </footer>
 
     <script src="script.js"></script>
-</body>
 
+</body>
 </html>

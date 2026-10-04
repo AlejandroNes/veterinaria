@@ -4,98 +4,450 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Veterinaria - Contacto</title>
+    <title>PetVida - Clínica Veterinaria La Paz, Bolivia</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <!-- Barra Superior Informativa -->
+    <div class="topbar">
+        <div class="container topbar-content">
+            <div class="topbar-info">
+                <span>📍 Av. Montenegro #1254, San Miguel, La Paz</span>
+                <span>📞 (02) 279-4512</span>
+                <span>📱 +591 762-34589</span>
+                <span>⏰ Lun - Sáb: 08:30 - 20:00</span>
+            </div>
+
+            <div class="topbar-info">
+                <span class="topbar-badge">Urgencias 24/7</span>
+                <span>🚨 Guardia Médica La Paz</span>
+            </div>
+        </div>
+    </div>
+
     <!-- Encabezado y Navegación Principal -->
-    <header>
-        <h1>Clínica Veterinaria</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+    <header class="header" id="mainHeader">
+        <div class="container navbar">
+
+            <a href="index.html" class="brand">
+                <div class="brand-icon">🐾</div>
+                <div class="brand-title">Pet<span>Vida</span></div>
+            </a>
+
+            <button class="mobile-toggle" id="mobileToggle">
+                ☰
+            </button>
+
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="productos.html" class="nav-link">Productos</a></li>
+                    <li><a href="contacto.html" class="nav-link active">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#formulario-contacto" class="btn btn-primary btn-sm">
+                    Enviar Consulta
+                </a>
+            </div>
+
+        </div>
     </header>
 
-    <!-- Contenido Principal -->
-    <main>
-        <section id="contacto-intro">
-            <h2>Contáctanos</h2>
-            <p>¿Tienes dudas o necesitas información sobre nuestros servicios? Comunícate con nosotros por cualquiera de nuestros medios o déjanos un mensaje.</p>
-        </section>
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
 
-        <!-- Información de Contacto -->
-        <section id="info-contacto">
-            <h2>Información de la Clínica en La Paz</h2>
-            <ul>
-                <li><strong>Sede Zona Sur:</strong> Av. Montenegro #1254, San Miguel, La Paz - Bolivia</li>
-                <li><strong>Sede Sopocachi:</strong> Av. 20 de Octubre #2185, La Paz - Bolivia</li>
-                <li><strong>Central Telefónica:</strong> (02) 279-4512 / (02) 244-1890</li>
-                <li><strong>WhatsApp & Urgencias 24/7:</strong> +591 762-34589</li>
-                <li><strong>Correo Electrónico:</strong> contacto@petvida.com.bo</li>
-            </ul>
+            <div class="section-header">
+                <span class="section-label">Contáctanos</span>
 
-            <h3>Horarios de Atención</h3>
-            <ul>
-                <li><strong>Lunes a Viernes:</strong> 08:30 - 20:00</li>
-                <li><strong>Sábados:</strong> 09:00 - 18:30</li>
-                <li><strong>Guardia Médica y Urgencias:</strong> 24 Horas / 7 Días (Sede San Miguel)</li>
-            </ul>
-        </section>
+                <h1 class="section-title">
+                    Estamos para ayudarte y cuidar a tu mascota
+                </h1>
 
-        <!-- Formulario de Contacto -->
-        <section id="formulario-contacto">
-            <h2>Envíanos un Mensaje</h2>
-            <form id="formContacto" action="#" method="POST">
-                <div>
-                    <label for="nombre">Nombre Completo:</label>
-                    <input type="text" id="nombre" name="nombre" required>
+                <p class="section-subtitle">
+                    Nuestro equipo veterinario está disponible para resolver
+                    tus consultas, brindar información sobre servicios y atender
+                    emergencias médicas.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Formulario de Contacto -->
+    <section id="formulario-contacto" class="appointment-section">
+
+        <div class="container">
+
+            <div class="appointment-container">
+
+                <div class="appointment-wrapper">
+
+                    <!-- Formulario -->
+                    <div class="appointment-form-side">
+
+                        <span class="section-label">
+                            Escríbenos
+                        </span>
+
+                        <h2 class="section-title">
+                            Envíanos un Mensaje
+                        </h2>
+
+                        <p style="color: var(--text-muted);">
+                            Completa el formulario y responderemos a la brevedad.
+                        </p>
+
+                        <form id="formContacto">
+
+                            <div class="form-grid">
+
+                                <div class="form-group">
+                                    <label for="nombre">
+                                        Nombre Completo *
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="nombre"
+                                        name="nombre"
+                                        class="form-control"
+                                        required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="correo">
+                                        Correo Electrónico *
+                                    </label>
+
+                                    <input
+                                        type="email"
+                                        id="correo"
+                                        name="correo"
+                                        class="form-control"
+                                        required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="telefono">
+                                        Teléfono / Celular
+                                    </label>
+
+                                    <input
+                                        type="tel"
+                                        id="telefono"
+                                        name="telefono"
+                                        class="form-control">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="asunto">
+                                        Asunto *
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="asunto"
+                                        name="asunto"
+                                        class="form-control"
+                                        required>
+                                </div>
+
+                                <div class="form-group full-width">
+                                    <label for="mensaje">
+                                        Mensaje *
+                                    </label>
+
+                                    <textarea
+                                        id="mensaje"
+                                        name="mensaje"
+                                        rows="5"
+                                        class="form-control"
+                                        required></textarea>
+                                </div>
+
+                                <div class="form-group full-width">
+
+                                    <button
+                                        type="submit"
+                                        class="btn btn-primary"
+                                        style="width:100%;">
+
+                                        Enviar Mensaje
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                    <!-- Información -->
+                    <div class="appointment-info-side">
+
+                        <div>
+
+                            <div class="info-side-header">
+                                <h3>Información de Contacto</h3>
+
+                                <p>
+                                    Puedes comunicarte con cualquiera de
+                                    nuestras sedes o acudir directamente
+                                    en caso de emergencia.
+                                </p>
+                            </div>
+
+                            <div class="info-contact-list">
+
+                                <div class="info-contact-item">
+
+                                    <div class="contact-icon">
+                                        📍
+                                    </div>
+
+                                    <div class="contact-text">
+                                        <strong>Sede San Miguel</strong>
+
+                                        <span>
+                                            Av. Montenegro #1254,
+                                            Zona Sur, La Paz
+                                        </span>
+                                    </div>
+
+                                </div>
+
+                                <div class="info-contact-item">
+
+                                    <div class="contact-icon">
+                                        📍
+                                    </div>
+
+                                    <div class="contact-text">
+                                        <strong>Sede Sopocachi</strong>
+
+                                        <span>
+                                            Av. 20 de Octubre #2185,
+                                            La Paz
+                                        </span>
+                                    </div>
+
+                                </div>
+
+                                <div class="info-contact-item">
+
+                                    <div class="contact-icon">
+                                        📞
+                                    </div>
+
+                                    <div class="contact-text">
+                                        <strong>Central Telefónica</strong>
+
+                                        <span>
+                                            (02) 279-4512 / (02) 244-1890
+                                        </span>
+                                    </div>
+
+                                </div>
+
+                                <div class="info-contact-item">
+
+                                    <div class="contact-icon">
+                                        💬
+                                    </div>
+
+                                    <div class="contact-text">
+                                        <strong>WhatsApp 24/7</strong>
+
+                                        <span>
+                                            +591 762-34589
+                                        </span>
+                                    </div>
+
+                                </div>
+
+                                <div class="info-contact-item">
+
+                                    <div class="contact-icon">
+                                        ✉️
+                                    </div>
+
+                                    <div class="contact-text">
+                                        <strong>Correo Electrónico</strong>
+
+                                        <span>
+                                            contacto@petvida.com.bo
+                                        </span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="emergency-pill">
+
+                            <span style="font-size:1.6rem;">
+                                🚨
+                            </span>
+
+                            <div>
+                                <strong>
+                                    Atención de Emergencias 24/7
+                                </strong>
+
+                                <span>
+                                    Guardia médica permanente para
+                                    perros, gatos y mascotas en general.
+                                </span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
                 </div>
 
-                <div>
-                    <label for="correo">Correo Electrónico:</label>
-                    <input type="email" id="correo" name="correo" required>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Ubicación -->
+    <section class="services-section">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <span class="section-label">
+                    Ubicación
+                </span>
+
+                <h2 class="section-title">
+                    Nuestras Sedes en La Paz
+                </h2>
+
+                <p class="section-subtitle">
+                    Visítanos en cualquiera de nuestras instalaciones.
+                </p>
+
+            </div>
+
+            <div class="services-grid">
+
+                <article class="service-card">
+                    <div class="service-content">
+                        <h3>🏥 Sede San Miguel</h3>
+
+                        <p>
+                            Av. Montenegro #1254,
+                            Zona Sur, La Paz.
+                        </p>
+
+                        <p>
+                            Guardia médica permanente y parqueo propio.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-content">
+                        <h3>🏥 Sede Sopocachi</h3>
+
+                        <p>
+                            Av. 20 de Octubre #2185,
+                            entre Guachalla y Aspiazu.
+                        </p>
+
+                        <p>
+                            Fácil acceso desde las líneas del Teleférico.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div class="footer-brand">
+
+                    <div class="brand">
+                        <div class="brand-icon">🐾</div>
+                        <div class="brand-title">Pet<span>Vida</span></div>
+                    </div>
+
+                    <p>
+                        Clínica veterinaria especializada en medicina,
+                        cirugía, urgencias y bienestar integral para
+                        mascotas en La Paz.
+                    </p>
+
                 </div>
 
-                <div>
-                    <label for="telefonoContacto">Teléfono / Celular:</label>
-                    <input type="tel" id="telefonoContacto" name="telefonoContacto">
+                <div class="footer-col">
+                    <h4>Navegación</h4>
+
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
                 </div>
 
-                <div>
-                    <label for="asunto">Asunto:</label>
-                    <input type="text" id="asunto" name="asunto" required>
+                <div class="footer-col">
+                    <h4>Servicios</h4>
+
+                    <ul>
+                        <li>Consulta Médica</li>
+                        <li>Vacunación</li>
+                        <li>Cirugías</li>
+                        <li>Peluquería</li>
+                        <li>Urgencias 24/7</li>
+                    </ul>
                 </div>
 
-                <div>
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+
+                    <ul>
+                        <li>📍 San Miguel</li>
+                        <li>📞 (02) 279-4512</li>
+                        <li>📱 +591 762-34589</li>
+                        <li>✉ contacto@petvida.com.bo</li>
+                    </ul>
                 </div>
 
-                <button type="submit">Enviar Mensaje</button>
-            </form>
-        </section>
+            </div>
 
-        <!-- Ubicación -->
-        <section id="ubicacion">
-            <h2>Nuestra Ubicación en La Paz</h2>
-            <p><strong>Sede San Miguel:</strong> Av. Montenegro #1254 (a pasos de la Plaza Triangular de San Miguel, Zona Sur). Cuenta con parqueo propio.</p>
-            <p><strong>Sede Sopocachi:</strong> Av. 20 de Octubre #2185 (entre Guachalla y Aspiazu). Fácil acceso desde la línea Amarilla y Blanca del Teleférico.</p>
-        </section>
-    </main>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Clínica Veterinaria PetVida</p>
+                <p>Grupo 3 - Trabajo Colaborativo</p>
+            </div>
 
-    <!-- Pie de Página -->
-    <footer>
-        <p>&copy; 2026 Clínica Veterinaria. Todos los derechos reservados.</p>
-        <p>Grupo 3 - Práctica de Trabajo Colaborativo</p>
+        </div>
+
     </footer>
 
     <script src="script.js"></script>
-</body>
 
+</body>
 </html>
+```
